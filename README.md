@@ -1,4 +1,13 @@
-jquery.alldone
+jQuery.alldone
 ==============
 
-Wait for all elements to trigger any of the supplied events.
+jQuery plugin to bind events on multiple elements and execute a callback when every element has triggered one of the supplied events.
+
+
+**Usage:**
+
+```javascript
+$('div[data-video],div[data-tweet]').allDone('video:loaded tweet:loaded', function(){
+  // Reposition DOM elements for example
+});
+```
