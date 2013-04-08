@@ -11,7 +11,7 @@
     function itemLoaded(event){
       if ( --len <= 0 ){
         setTimeout( triggerCallback );
-        $images.unbind('.allDone', itemLoaded);
+        $this.unbind('.allDone', itemLoaded);
       }
     };
 
